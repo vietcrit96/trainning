@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">tranning</string>
+    <string name="sg">Chọn giờ</string>
+    <string name="sn">Chọn ngày</string>
+</resources>
