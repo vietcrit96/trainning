@@ -24,8 +24,9 @@ public class MainActivity extends AppCompatActivity {
     private Button btn_order;
     private Button btn_ok;
 
-    private boolean kem = false;
-    private boolean scl = false;
+    private boolean kem=false;
+//    private int scl;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -64,6 +65,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (cb_kem.isChecked()) {
+                    tv_sl.setText( "0" );
                     cb_scl.setChecked( false );
                     kem = true;
                     tv_addKem.setText( "add Whipped Cream : true" );
@@ -75,8 +77,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (cb_scl.isChecked()) {
+                    tv_sl.setText( "0" );
                     cb_kem.setChecked( false );
-                    scl = true;
+                    kem = false;
                     tv_addKem.setText( "add Whipped Cream : false" );
                     tv_addScl.setText( "add Chocolate : true" );
                 }
@@ -90,10 +93,11 @@ public class MainActivity extends AppCompatActivity {
                     i = i - 1;
                     tv_sl.setText( String.valueOf( i ) );
                     tv_quantity.setText( "Quantity: " + String.valueOf( i ) );
-                    if (kem = true) {
+                    if (kem==true) {
                         tv_total.setText( "Total: " + String.valueOf( i * 10 ) + "$" );
+                    } else if (kem==false) {
+                        tv_total.setText( "Total: " + String.valueOf( i * 5 ) + "$" );
                     }
-                    tv_total.setText( "Total: " + String.valueOf( i * 5 ) + "$" );
                 }
             }
         } );
@@ -104,10 +108,11 @@ public class MainActivity extends AppCompatActivity {
                 i = i + 1;
                 tv_sl.setText( String.valueOf( i ) );
                 tv_quantity.setText( "Quantity: " + String.valueOf( i ) );
-                if (kem = true) {
+                if (kem==true) {
                     tv_total.setText( "Total: " + String.valueOf( i * 10 ) + "$" );
+                } else if (kem==false) {
+                    tv_total.setText( "Total: " + String.valueOf( i * 5 ) + "$" );
                 }
-                tv_total.setText( "Total: " + String.valueOf( i * 5 ) + "$" );
             }
 
         } );
