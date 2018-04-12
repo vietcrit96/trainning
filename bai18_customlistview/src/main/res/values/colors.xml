@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="lamnhenhang">#0299EE</color>
+    <color name="hongcatinh">#EE45B8</color>
+    <color name="lucdamda">#11A61D</color>
+    <color name="dochot">#E41841</color>
+    <color name="denxi">#000</color>
+</resources>
