@@ -9,9 +9,12 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
-            <option value="$PROJECT_DIR$/bai15" />
+            <option value="$PROJECT_DIR$/bai15_datetimepicker" />
             <option value="$PROJECT_DIR$/bai16_dialog" />
             <option value="$PROJECT_DIR$/bai17_listview" />
+            <option value="$PROJECT_DIR$/bai18_customlistview" />
+            <option value="$PROJECT_DIR$/bai19_swapactiviti" />
+            <option value="$PROJECT_DIR$/bai20_datatranmission" />
             <option value="$PROJECT_DIR$/baitapngay8_4" />
           </set>
         </option>

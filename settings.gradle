@@ -1,1 +1,1 @@
-include ':app', ':bai15', ':bai16_dialog', ':bai17_listview', ':baitapngay8_4'
+include ':app', ':bai15_datetimepicker', ':bai16_dialog', ':bai17_listview', ':baitapngay8_4', ':bai18_customlistview', ':bai19_swapactiviti', ':bai20_datatranmission'
